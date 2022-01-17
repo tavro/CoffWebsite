@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>COFF Language | Documentation</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="../css/style-extended.css">
+	<style>
+		.code-example {
+			margin-left: 16px;
+			margin-right: 16px;
+			padding-left: 8px;
+		}
+	</style>
+	<script src=""></script>
+</head>
+<body>
+
+	<div class="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="learn.html">Learn</a></li>
+			<li><a href="docs.html">Documentation</a></li>
+			<li><a href="downloads.html">Downloads</a></li>
+			<li><a href="community.html">Community</a></li>
+		</ul>
+	</div>
+
+	<div class="about">
+		<h1>Coff Official Documentation</h1>
+
+		<h3>Typing</h3>
+		<p>Assigning datatypes to variables</p>
+		<div class="code-example">
+			<code><span class="id">variable_name</span> > <span class="type">datatype</span></code>
+			<br>
+			<code><span class="id">variable_name</span> > <span class="dynamic">list</span>[<span class="type">datatype</span>]</code>
+		</div>
+		<p>Assigning returntypes to functions</p>
+		<div class="code-example">
+			<code><span class="id">function_name</span> : (<span class="id">argument_name</span> > <span class="type">datatype</span>) > <span class="type">datatype</span></code>
+		</div>
+
+		<h3>Declarations</h3>
+		<p>Declaring variables</p>
+		<div class="code-example">
+			<code><span class="id">variable_name</span> > <span class="type">datatype</span> : <span class="id">value</span></code>
+		</div>
+		<p>Declaring functions</p>
+		<div class="code-example">
+			<code>
+			<span class="id">function_name</span> : (<span class="id">argument_name</span> > <span class="type">datatype</span>, ...) > <span class="type">datatype</span><br>
+			{ <br>
+			&emsp;<span class="special">return</span>(<span class="id">value</span>);<br>
+			} <br>
+			</code>
+		</div>
+	</div>
+
+</body>
+</html>
+
+<!--
+main : (argc > int, argv > list[string]) > int
+{ 
+	return(0);
+}
+-->
